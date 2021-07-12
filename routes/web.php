@@ -16,5 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/model', function (){
-
+    return \App\User::all();
 });
+
+Route::get('/admin/stores', 'Admin\StoreController@index');
